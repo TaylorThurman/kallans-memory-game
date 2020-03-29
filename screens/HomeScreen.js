@@ -6,7 +6,7 @@ import {
     Text,
     Alert,
     ImageBackground,
-    TouchableOpacity
+    TouchableOpacity,
 } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 
@@ -119,7 +119,7 @@ export default class HomeScreen extends React.Component {
                     <View style={{
                         flexDirection: 'row',
                     }}>
-                        <TouchableOpacity onPress={() => this.alert()}
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('TestRT')}
                                           style={{
                                               padding: 10,
                                               backgroundColor: 'rgba(0, 0, 0, 0.4)',

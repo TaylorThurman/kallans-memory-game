@@ -3,10 +3,14 @@ import * as Font from 'expo-font';
 import {StackNavigator} from 'react-navigation';
 
 import HomeScreen from "./screens/HomeScreen";
+import TestScreen from "./screens/TestScreen";
 
 const MyRoutes = StackNavigator({
         HomeRT: {
             screen: HomeScreen
+        },
+        TestRT: {
+            screen: TestScreen
         }
     },
     {
@@ -23,7 +27,7 @@ export default class App extends React.Component {
             'monster-rat': require('./assets/fonts/Montserrat-Bold.ttf'),
         });
 
-        this.setState({ fontLoaded: true });
+        this.setState({fontLoaded: true});
     }
 
     render() {
