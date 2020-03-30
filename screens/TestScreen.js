@@ -24,14 +24,14 @@ class TestScreen extends Component {
             gameStarted: false
         };
 
-        this.imageHeight = new Animated.Value(1);
+        this.imageHeight = new Animated.Value(0);
     }
 
     playGame = () => {
         this.setState({gameStarted: true});
 
         Animated.timing(this.imageHeight, {
-            duration: 250,
+            duration: 500,
             toValue: 2,
         }).start();
     };
@@ -97,7 +97,7 @@ class TestScreen extends Component {
                                 backgroundColor: '#fff'
                             }}>
 
-                            <Input placeholder={'Hi'}/>
+                            {/*<Input placeholder={'Hi'}/>*/}
                             {/*<Text>Hi</Text>*/}
                         </Animated.View>
                     )}
